@@ -85,15 +85,14 @@ print(data.dropna(inplace=True))                                   # Dropped nul
 
 
 # Checking how many retailers and buyers we have :
-dfx = data['B2B'].value_counts()
-ex = [0,0.2]
-plt.pie(dfx,autopct='%1.1f',explode=ex,startangle=180,shadow=True)
-plt.title("Buyers vs Retailers")
-plt.ylabel("Retailer")
-plt.xlabel("Buyer")
-plt.savefig("buyers_retailers.png")
-plt.show()
-
+# dfx = data['B2B'].value_counts()
+# ex = [0,0.2]
+# plt.pie(dfx,autopct='%1.1f',explode=ex,startangle=180,shadow=True)
+# plt.title("Buyers vs Retailers")
+# plt.ylabel("Retailer")
+# plt.xlabel("Buyer")
+# plt.savefig("buyers_retailers.png")
+# plt.show()
 
 
 
@@ -101,6 +100,24 @@ plt.show()
 
 
 
+
+
+
+
+# Check that which sizes are available in all categories:
+sns.scatterplot(data = data, x="Category",y="Size",marker="D",c="red")
+plt.xlabel("Category",fontsize=12)
+plt.ylabel("Size",fontsize=12)
+plt.title("Size available for all Categories",fontsize=15)
+plt.savefig("size_category.png")
+plt.show()
+
+
+
+
+# Note : From above Graph you can see that T-shirt and shirt have all sizes available except Free size.
+#        Blazzer, Socks and Tousers have not 4XL,5XL,6XL and Free sizes available
+#        Wallect, Perfume and Shoes have only Free size available.
 
 
 
