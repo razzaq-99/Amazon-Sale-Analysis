@@ -67,17 +67,38 @@ print(data.dropna(inplace=True))                                   # Dropped nul
 
 
 # Checking which product is sold the most :
-data['Category'] = data['Category'].astype(str)
+# data['Category'] = data['Category'].astype(str)
 
-plt.hist(data = data,x="Category",bins=20,edgecolor='black',color='purple')
-plt.xlabel("Products",fontsize=12)
-plt.ylabel("Quantity",fontsize=12)
-plt.title("Product sold the most",fontsize=15)
-plt.show()
+# plt.hist(data = data,x="Category",bins=20,edgecolor='black',color='purple')
+# plt.xlabel("Products",fontsize=12)
+# plt.ylabel("Quantity",fontsize=12)
+# plt.title("Product sold the most",fontsize=15)
+# plt.show()
 
 
 #  Note : From above graph you can see that T-shirts and shirts are the two most sold products. But some other products like shoes,
 #         socks , wallet and perfume are not so popular.
+
+
+
+
+
+
+# Checking how many retailers and buyers we have :
+dfx = data['B2B'].value_counts()
+ex = [0,0.2]
+plt.pie(dfx,autopct='%1.1f',explode=ex,startangle=180,shadow=True)
+plt.title("Buyers vs Retailers")
+plt.ylabel("Retailer")
+plt.xlabel("Buyer")
+plt.savefig("buyers_retailers.png")
+plt.show()
+
+
+
+
+# Note : From above Graph you can see that 99% are retailers and only 1% are the people who buy products.
+
 
 
 
