@@ -105,13 +105,12 @@ print(data.dropna(inplace=True))                                   # Dropped nul
 
 
 # Check that which sizes are available in all categories:
-sns.scatterplot(data = data, x="Category",y="Size",marker="D",c="red")
-plt.xlabel("Category",fontsize=12)
-plt.ylabel("Size",fontsize=12)
-plt.title("Size available for all Categories",fontsize=15)
-plt.savefig("size_category.png")
-plt.show()
-
+# sns.scatterplot(data = data, x="Category",y="Size",marker="D",c="red")
+# plt.xlabel("Category",fontsize=12)
+# plt.ylabel("Size",fontsize=12)
+# plt.title("Size available for all Categories",fontsize=15)
+# plt.savefig("size_category.png")
+# plt.show()
 
 
 
@@ -122,3 +121,20 @@ plt.show()
 
 
 
+
+
+
+
+# Check top/first 5 states which buys the most products:
+top_10 = data['ship-state'].value_counts().head(5)
+
+plt.figure(figsize=(22,6))
+
+sns.countplot(data = data[data['ship-state'].isin(top_10.index)], x ="ship-state",hue="Category")
+
+plt.xlabel("State", fontsize=12)
+plt.ylabel("Count", fontsize=12)
+plt.title("Top 5 States with most number of purchases", fontsize=14)
+
+plt.savefig("top5_states.png")
+plt.show()
