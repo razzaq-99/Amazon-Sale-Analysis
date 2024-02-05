@@ -138,3 +138,21 @@ plt.title("Top 5 States with most number of purchases", fontsize=14)
 
 plt.savefig("top5_states.png")
 plt.show()
+
+
+
+  # Note : From Above Graph you can see that most buyers are from Maharashtra and Karnataka with products like T-shirt and shirt.
+  #        These are the top 5 states  which buy the most number of products. Products like shoes and wallet have least sale.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  # Conclusion : The above Data Analysis reveals that business has significant customer base in Maharashta and mainly services are retailers, 
+  #              fulfills order through Amazon , experiences high demand of T-shirts and shirts with Medium size . 
+  #              It also reveals the  Category which has the highest sales in each state.
+  #              It shows that most products are shipped and few are cancelled due to some reasons.
