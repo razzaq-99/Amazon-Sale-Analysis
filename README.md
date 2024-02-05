@@ -40,7 +40,7 @@ From above Graph you can see that 99% are retailers and only 1% are the people w
 - Wallect, Perfume and Shoes have only Free size available.
 
 
-<img src= "https://github.com/razzaq-99/Amazon-Sale-Analysis/blob/master/top5_states.png" width="500">
+<img src= "https://github.com/razzaq-99/Amazon-Sale-Analysis/blob/master/top5_states.png" width="1000">
 
 
 # Note : 
