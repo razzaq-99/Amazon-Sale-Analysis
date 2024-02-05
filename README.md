@@ -7,7 +7,6 @@ This Project contains different kind of information related with products and se
 
 
 ## Note :
-
 From above Graph you can see that most people buys Medium (M) size.
 
 
@@ -15,7 +14,6 @@ From above Graph you can see that most people buys Medium (M) size.
 
 
 # Note :
-
 From above Graph you can see that mostly items are shipped and few are cancelled due to some sort of reasons.
 
 
@@ -23,5 +21,11 @@ From above Graph you can see that mostly items are shipped and few are cancelled
 
 
 # Note : 
-
 From above graph you can see that T-shirts and shirts are the two most sold products. But some other products like shoes, socks , wallet and perfume are not so popular.
+
+
+<img src = "https://github.com/razzaq-99/Amazon-Sale-Analysis/blob/master/buyers_retailers.png">
+
+
+# Note : 
+From above Graph you can see that 99% are retailers and only 1% are the people who buy products.
