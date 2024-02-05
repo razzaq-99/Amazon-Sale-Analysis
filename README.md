@@ -10,3 +10,11 @@ This Project contains different kind of information related with products and se
 
 From above Graph you can see that most people buys Medium (M) size.
 
+
+<img src="https://github.com/razzaq-99/Amazon-Sale-Analysis/blob/master/courier_status.png">
+
+
+# Note :
+
+From above Graph you can see that mostly items are shipped and few are cancelled due to some sort of reasons.
+
